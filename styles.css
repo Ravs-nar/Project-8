@@ -89,6 +89,10 @@ p {
     justify-content: space-evenly;
 }
 
+.card:hover {
+    background-color: rgb(202, 217, 166);
+}
+
 .name {
     margin-top: 15px;
     margin-bottom: 10px;
