@@ -1,13 +1,24 @@
 *{
-    padding: 0;
-
-    text-align: center;
+    display: border-box;
+    padding: 0px;
 }
 
+h1 {
+    margin:0;
+    color:rgb(67, 67, 72);
+    padding-left: 100px;
+    height: 30px;
+    
+}
 .grid-container{
 display: grid;
-grid-template-columns: auto auto auto;
+justify-content: space-evenly;
+grid-template-columns: 400px 400px 400px;
+grid-template-rows: 150px;
 padding: 20px;
+gap: 20px;
+
+
 
 }
 
@@ -21,7 +32,7 @@ body{
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(100, 100, 100, 0.4);
+    background: rgba(182, 174, 174, 0.4);
 }
 .hidden {
     display: none;
@@ -29,41 +40,71 @@ body{
 
 .modal {
     width: 300px;
-    margin: 15% auto auto;
+    margin:  8% auto auto;
     text-align: center;
-    background: rgb(230, 228, 228);
-    border: 1px solid #778;
+    background: rgb(244, 241, 241);
+    border: 1px solid rgb(253, 253, 253);
     border-radius: 9px;
-    padding-top: 40px;
+    padding: 20px;
 }
 .modal-close {
-    position:absolute;
-    right: 15px;
-    top: 5px;
+    position: relative;
+    bottom: 15px;
+    left: 140px;
     cursor: pointer;
+    color: black;
+    background-color: white;
+    border: none;
 }
+
+
 
 .avatar{
     border-radius: 70px;
+    width: 110px;
+}
+h2 {
+    color: rgb(63, 61, 61);
 }
 
 p {
-    color:rgb(76, 76, 85);
+    color:rgb(110, 110, 120);
 }
-.email{
-    margin: 0;
-}
-.address {
-    margin: 0;
-}
-.city {
-    margin: 0;
-}
+
 .bday {
     margin: 0;
     margin-bottom: 19px;
 }
-.phone {
+
+/*////////////////////////////////////*/
+
+.card {
+    max-width: 400px;
+    display: flex;
+    padding: 15px 0px;
+    margin: 0px;
+    border-style: ridge;
+    border-color: rgba(246, 246, 225, 0.492);
+    border-radius: 8px;
+    justify-content: space-evenly;
+}
+
+.name {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.email {
+    margin: 0;
+    margin-bottom: 5px ;
+}
+.city {
     margin: 0;
 }
-/*////////////////////////////////////*/
+.break {
+    background-color: aliceblue;
+}
+
+.phone {
+    border-top:  2px solid rgb(230, 224, 219);
+    padding-top: 10px;
+}
