@@ -5,6 +5,8 @@ const gridContainer = document.querySelector('.grid-container');
 const overlay = document.querySelector('.overlay');
 const modalContainer = document.querySelector(".modal-content");
 const modalClose = document.querySelector(".modal-close");
+const nextBtn = document.querySelector(".next");
+const backBtn = document.querySelector("back");
 
 
 fetch(urlAPI)
@@ -88,3 +90,4 @@ gridContainer.addEventListener("click", e => {
 modalClose.addEventListener('click', () => {
     overlay.classList.add("hidden");
 })
+
