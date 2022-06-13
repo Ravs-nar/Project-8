@@ -1,5 +1,5 @@
 *{
-    display: border-box;
+
     padding: 0px;
 }
 
@@ -22,8 +22,9 @@ gap: 20px;
 
 }
 
-body{
+main{
     position: relative;
+    margin: 0;
 }
 /** overlay on page and pop up modal*/
 .overlay {

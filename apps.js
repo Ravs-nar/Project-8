@@ -58,6 +58,10 @@ function displayModal(index) {
 
     let date = new Date(dob.date);
 
+    let month = ('0' + date.getMonth()).slice(-2);
+
+    let day = ('0'+ date.getMonth()).slice(-2);
+
     modalHTML = `
         <img class="avatar" src="${picture.large}"/>
         <h2 class="name">${name.first} ${name.last}</h2>
@@ -65,7 +69,8 @@ function displayModal(index) {
         <p class="city">${city}</p>
         <p class="phone">${phone}</p>
         <p class="address">${street.number} ${street.name} ${state} ${postcode}</p>
-        <p class="bday">Birthday:${date.getMonth()}/${date.getDate()}/${date.getFullYear()}</p> 
+        <p class="bday">Birthday:
+        ${month}/${day}/${date.getFullYear()}</p> 
         `;
 
         overlay.classList.remove('hidden');
